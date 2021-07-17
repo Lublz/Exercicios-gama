@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	
+	<title>Página de Exercícios | Gama Academy</title>
+
+	<link href="stylesheet" type="style/css" href="stylesheet" href="style.css"/>
+
+</head>
+<body>
+	<!-- Cabeçalho-->
+	<header role="banner">
+		<nav role="navigation" aria-level="main navigation">
+			<ul role="menu">
+				<li>
+					<a href="#" role="menuitem">Home</a>
+				</li>
+				<li>
+					<a href="#" role="menuitem">Quem somos</a>
+				</li>
+				<li>
+					<a href="#" role="menuitem">Conteúdos</a>
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	<!-- Fim do cabeçalho-->
+
+
+
+	<!--Conteúdo principal-->
+	<main role="main">
+		
+		<p id="texto1">
+			O bebê já tem sua própria conta do Twitter, @BabyYodaBaby, em que acumula 17.000 seguidores, mas além disso disparou a criatividade dos tuiteiros e, sobretudo, despertou autêntica adoração.	
+		</p>
+
+		<button id="botao1" onclick="atualizacao()">Saber mais</button>
+
+		<script type="text/javascript">
+
+			function atualizacao() {
+				var texto1 = document.getElementById("texto1");
+
+				texto1.innerText = "Star Wars!"
+			}
+			
+
+		</script>
+
+		<p id="article-description">
+			Grogu foi treinado no Templo Jedi de Coruscant, mas conseguiu ser salvo do massacre realizado por Anakin a dezenas de mestres e crianças. Para sua própria proteção, Grogu se afastou da Força e possui agora memórias obscuras do passado. Por fim, ela relata que até hoje só havia conhecido uma pessoa como ele — e era justamente o mestre Yoda.
+		</p>
+
+		<script type="text/javascript">
+			var paragrafo = document.getElementById("article-description ");
+			paragrafo.style.color = "blue";
+
+			paragrafo.innerText = "Texto mudou!"
+
+
+		</script>
+
+		<form>
+			<label>E-mail</label>
+			<input type="E-mail">
+
+			<label>Interesse</label>
+			<input type="radio" name="interesse" value="Star Wars">
+			<label for="s">Star Wars</label>
+
+			<input type="radio" name="interesse" value="Mandaloriano">
+			<label for="m">Mandaloriano</label>
+
+			<input type="radio" name="interesse" value="programação">
+			<label for="l">Programação</label>
+
+			<input type="submit" name="inscrever">
+		</form>
+
+	</main>
+	<!--Fim do conteúdo principal-->
+
+	<!--Rodapé-->
+	<footer role="contentinfo">
+		&copy; 2021 Luísa é programadora!
+	</footer>
+	<!--Fim do rodapé-->
+</body>
+</html>
